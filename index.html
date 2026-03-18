@@ -1,0 +1,8 @@
+<form action="/salvar" method="POST">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="text" name="telefone" placeholder="Telefone">
+    <input type="email" name="email" placeholder="E-mail">
+    <button type="submit">Salvar no Banco</button>
+</form>
+
+<node class="js">sqlite3 thiago.db "SELECT * FROM contatos;"</node>
